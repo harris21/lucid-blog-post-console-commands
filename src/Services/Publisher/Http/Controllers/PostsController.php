@@ -3,6 +3,7 @@ namespace App\Services\Publisher\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Lucid\Foundation\Http\Controller;
+use App\Services\Publisher\Features\CreatePostFeature;
 
 class PostsController extends Controller
 {
@@ -23,7 +24,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return $this->serve(CreatePostFeature::class);
     }
 
     /**
