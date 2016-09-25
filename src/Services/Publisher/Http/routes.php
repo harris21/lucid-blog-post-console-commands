@@ -20,4 +20,6 @@ Route::group(['prefix' => 'publisher'], function() {
         return view('publisher::welcome');
     });
 
+    Route::post('/posts', 'PostsController@create');
+
 });
