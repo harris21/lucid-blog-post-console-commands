@@ -2,7 +2,7 @@
 namespace App\Domains\Post\Jobs;
 
 use Lucid\Foundation\Job;
-use Trellis\Api\Domains\Talent\PostValidator;
+use App\Domains\Post\PostValidator;
 
 class ValidatePostInputJob extends Job
 {

@@ -1,17 +1,22 @@
 <?php
 namespace App\Domains\Post\Jobs;
 
+use App\Data\Repositories\PostRepository;
 use Lucid\Foundation\Job;
 
 class CreatePostJob extends Job
 {
-    public function __construct()
-    {
+    private $title;
+    private $body;
 
+    public function __construct($title, $body)
+    {
+        $this->title = $title;
+        $this->body = $body;
     }
 
-    public function handle()
+    public function handle(PostRepository $post)
     {
-
+        return $post->create($this->title, $this->body);
     }
 }

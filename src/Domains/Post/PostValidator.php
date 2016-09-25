@@ -1,6 +1,6 @@
 <?php
 
-namespace Trellis\Api\Domains\Talent;
+namespace App\Domains\Post;
 
 use Lucid\Foundation\Validator;
 
