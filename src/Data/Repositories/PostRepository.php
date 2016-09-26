@@ -13,9 +13,9 @@ class PostRepository
 
         $post->title = $title;
         $post->body = $body;
-// dd($post);
+
         $post->save();
-// dd('s');
+
         return $post;
     }
 }
