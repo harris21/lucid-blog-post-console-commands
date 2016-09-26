@@ -1,3 +1,6 @@
+## Medium
+This code is related to this [medium blogpost](https://medium.com/p/429f81c3aa22).
+
 ## Lucid
 
 Read about the [Lucid Architecture Concept](https://medium.com/vine-lab/the-lucid-architecture-concept-ad8e9ed0258f).
