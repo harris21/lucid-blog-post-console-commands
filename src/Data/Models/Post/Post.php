@@ -2,9 +2,9 @@
 
 namespace App\Data\Models\Post;
 
-use Lucid\Foundation\Model;
+use Eloquent;
 
-class Post extends Model
+class Post extends Eloquent
 {
     protected $fillable = ['title', 'body'];
 }
