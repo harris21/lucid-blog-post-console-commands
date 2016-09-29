@@ -19,6 +19,6 @@ class CreatePostFeature extends Feature
             'body' => $request->input('body', null),
         ]);
 
-        return $this->run(RespondWithJsonJob::class, ['content' => $post]);
+        return $this->run(new RespondWithJsonJob($post));
     }
 }
